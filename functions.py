@@ -130,7 +130,7 @@ def run_app():
                 has = ', '.join(check_fitness(student_info, prof_info)['has']) if not fit['has'] == [] else "-"
                 lacks = ', '.join(check_fitness(student_info, prof_info)['lacks']) if not fit['lacks'] == [] else "-"
 
-                get_text_info(f"Пригодность {fit['fit_percent']}\n"
+                get_text_info(f"Пригодность {fit['fit_percent']}%\n"
                               f"{get_student_name(student)} знает {has}\n"
                               f"{get_student_name(student)} не знает {lacks}", 1)
             else:
